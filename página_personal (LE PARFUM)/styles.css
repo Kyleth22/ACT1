@@ -1,0 +1,227 @@
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+}
+header {
+    background-color: #262626;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#titulo {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+}
+
+.contenido-header {
+    border-top: 2px solid #c7a14a;
+    padding-top: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contenido-header h3 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.contenido-header h5 {
+    font-size: 12px;
+    color: #e9e5e5;
+    margin: 10px 0;
+}
+
+.perfumes {
+    text-align: center;
+    padding: 30px 20px;
+    color: #f2f2f2;
+}
+
+.contenedor_perfumes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.caja_perfume {
+    background-color: #2e2e2e;
+    width: 280px;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.caja_perfume img {
+    width: 100%;
+    border-radius: 6px;
+    margin: 15px 0;
+}
+
+.caja_perfume h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.caja_perfume p {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-align: justify;
+    color: #e0e0e0;
+}
+
+.boton_vermas {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    border: 2px solid #c7a14a;
+    background-color: transparent;
+    color: #c7a14a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none; /* quita subrayado */
+    transition: all 0.5s ease;
+}
+
+.boton_vermas:hover {
+    background-color: #c7a14a;
+    color: #1e1e1e;
+}
+
+.contacto {
+    background-color: #1e1e1e;
+    padding: 80px 20px; 
+    color: #f2f2f2;
+}
+
+.contacto h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.contenedor_contacto {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.formulario_contacto form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario_contacto label {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.formulario_contacto input,
+.formulario_contacto textarea {
+    background-color: #262626;
+    border: 2px solid #777;
+    padding: 12px;
+    margin-bottom: 20px;
+    color: #f2f2f2;
+    border-radius: 6px;
+}
+
+.formulario_contacto textarea {
+    resize: none;
+}
+
+.formulario_contacto button {
+    width: 150px;
+    align-self: center;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid #c7a14a;
+    color: #c7a14a;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.formulario_contacto button:hover {
+    background-color: #c7a14a;
+    color: #1e1e1e;
+}
+
+.footer {
+    background-color: #141414; 
+    color: #bdbdbd;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 6px 0;
+}
+
+.footer {
+    border-top: 1px solid #333;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #8f8f8f;
+}
+
+@media (max-width: 1024px) {
+
+    .contenedor_perfumes {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .caja_perfume {
+        width: 260px;
+    }
+
+    .contacto {
+        padding: 60px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px 15px;
+    }
+
+    #titulo {
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .contenido-header h3 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .contenedor_perfumes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja_perfume {
+        width: 90%;
+        max-width: 320px;
+    }
+
+    .contacto {
+        padding: 50px 15px;
+    }
+
+    .formulario_contacto button {
+        width: 100%;
+    }
+}
